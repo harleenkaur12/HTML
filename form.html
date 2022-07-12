@@ -1,0 +1,76 @@
+<!--Forms ar used for collecting data-->
+<!doctype html>
+<html>
+    <head>
+        <title>Students form</title>
+    </head>
+    <body>
+        <h2 align="center">Students Form</h2>
+        <form method="post" action="marquee.html" >
+            <B><label>Student Name</label><br></B>
+            <input required type="text" id="name" placeholder="Your name here">
+            <button>Ok</button><br>
+            <BR>
+
+            <B><label>Password</label><br></B>
+            <input type="password" required maxlength="10"> <!--required and maxlength attributes-->
+            <button>Ok</button><br>
+            <BR>
+
+            <B ><label>Select Gender </label><br></B>
+            <input type="radio" value="Male" name="gender">Male<br>
+            <input type="radio" value="Female" name="gender">Female
+            <br><BR>
+
+            <B><label>Select Hobbies</label></B>
+            <br>
+            <input type="checkbox" value="Watching TV" name="watching TV" >Watching TV <br>         
+            <input type="checkbox" value="Reading" name="reading" >Reading <br>
+            <input type="checkbox" value="Driving" name="driving" >Driving<br>
+            <br>
+
+            <B><label>Select Date of Birth</label></B><br>
+            <input type="date" name="dob"><br>
+            <br>
+
+            <b><label>Enter Age</label></b><br>
+            <input type="number">
+            <br><br>
+
+            <b><label>Enter Address</label></b><br>
+            <textarea cols="50" rows="15" placeholder="Your address here"></textarea> <!--textarea tag has cols and rows instead of height and width -->
+            <br><br>
+
+            <b><label>Select cities</label></b><br>
+            <select>
+
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Indore">Indore</option>
+                <option value="Chandigarh">Chandigarh</option>
+
+
+            </select><br><br>
+            <b><label>Select color</label></b>
+            <input type="color">
+            <br><br>
+            <b><label>Select Image</label></b><br>
+            <input type="file">
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+
+            <!--Methods -- get(not secure) and post(secure) -- attribute of form -->
+
+
+
+
+
+
+
+
+
+
+        </form>
+    </body>
+</html>
