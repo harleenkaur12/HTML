@@ -1,0 +1,181 @@
+#nav{
+    display: flex; justify-content: center;
+    font-family: garamond;
+    font-size: larger;
+}
+ul{
+    list-style: none;
+}
+   li{ 
+    float:left;
+    width:110px;
+    margin-left: 10px;
+    text-align: center;
+    height:30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+li:hover{
+    background-color: grey;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+#home{
+    background-image: url("/backpic.jpg");
+    background-repeat: no repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width:100%;
+    padding-top: 100px;
+}
+.content{
+    text-align: center;
+    padding-top: 100px;
+    color: black;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("/assets/annie-spratt-zA7I5BtFbvw-unsplash.jpg");
+    height: 100%;
+}
+.Shop .index{
+    text-align: center;
+    font-size: 50px;
+}
+.Shop{
+    padding:80px;
+	background-color:#ffffff;
+}
+	
+
+
+.Shop .Contents{ 
+ display: flex;
+}
+.Shop .Contents .box{
+	width: 30%;
+	padding:15px;
+}
+.Shop .Contents .box .inner{
+	background-color:rgb(244, 186, 186);
+
+}
+
+.Shop .Contents .box .inner .img img{
+	width: 100%;
+    height:100%;
+}
+.Shop .Contents .box .inner .text{
+	padding:30px;
+}
+
+.Shop .Contents .box .inner .text h3{
+  font-size: 20px;
+  font-weight: 500;
+  color:#ffffff;
+  text-align: center;
+  font-family: Garamond;
+}
+.Shop .Contents .box .inner .text p{
+	font-size: 15px;
+	color:#ffffff;
+	text-align: center;
+}
+.ContactUs
+{
+    text-align: center;
+    font-size: 30px;
+}
+.txt{
+    border:2px solid green;
+    font-size:20px;
+    width:35%;
+    margin:10px;
+}
+    
+.btn{
+        width:300px;
+        font-size:20px;
+        margin-top:10px;
+        color:green;
+        padding:10px;
+        background-color:#FFFDD0;
+        border-radius:30px;
+    }
+    .contact{
+		Background-color:#610A0A;
+		width:700px;
+		height:400px;
+		padding:24px;
+		margin:auto;
+}
+
+.conn{
+	font-size:50px;
+	color:red;
+	font-family:garamond;
+}
+
+
+
+#body{
+    background-image: url(/assets/annie-spratt-zA7I5BtFbvw-unsplash.jpg);
+}
+body{
+    font-family: Garamond;
+}
+
+.aboutme{
+    display: flex;
+    background-color: rgb(255,240,240);
+    
+}
+   
+
+#about{
+        background-image: url("/assets/imgnew.jpg");
+        background-repeat: no repeat;
+        background-position: center;
+        background-size: cover;
+        height: 650px;
+        width:100%;
+        padding-top: 100px;
+        padding-left: 20%;
+        display: inline-block;
+        
+    }*/
+
+    #bg{
+        background-image: url("/assets/annie-spratt-zA7I5BtFbvw-unsplash.jpg");
+        background-repeat: no repeat;
+        background-position: center;
+        background-size: cover;
+        height: 650px;
+        width:100%;
+        padding-top: 100px;
+    }
+#me{
+    
+    text-align: center;
+    font-size: x-large;
+    padding-right: 80px;
+    padding-left: 50px;
+
+    
+}
+#me1{
+    align-items: center;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+
+span{
+    color: #2d0404;
+    letter-spacing: 3px;
+
+}
