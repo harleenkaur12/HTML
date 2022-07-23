@@ -1,0 +1,80 @@
+.Container{
+    background:#3d5b99 ;
+    padding-left: 60%;
+    color: white;
+    height: 80px;
+    width: 100%;
+    font-family: Verdana;  
+}
+.Container #email{
+ 
+    float:left;
+    padding: 10px;
+}
+.Container #password{
+
+    float:left;
+    padding: 10px;
+}
+.Container #btn{
+    
+    float:left;
+    padding: 10px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+#a{
+    color: rgb(168, 167, 228);
+}
+.body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 63%;
+}
+#fname{
+    width: 30%;
+    height: 30px;
+    font-size:large;
+}
+#sname{
+    width: 30%;
+    height: 30px;
+    font-size:large;
+}
+#mobile{
+    width:63%;
+    height:30px;
+    font-size:large;
+}
+#newpassword{
+
+    font-size:large;
+    width:63%;
+    height:30px;
+
+}
+select{
+    
+    height: 30px;
+}
+.gender{
+    font-size: larger;
+    padding-right: 10px;
+}
+.birthday{
+    padding-right: 15px;
+}
+.button{
+    width:63%;
+    height:30px;
+    padding-left: 63%;
+
+}
+#b1{
+    background-color: rgb(43, 202, 43);
+    border:rgb(15, 169, 15) ;
+    height: 50px;
+    border-radius: 4px;
+    color:white;
+    font-size: large;
+
+}

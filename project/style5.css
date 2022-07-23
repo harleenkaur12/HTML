@@ -19,6 +19,9 @@ ul{
 li:hover{
     background-color: grey;
 }
+html{
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
     color:black;
@@ -147,17 +150,10 @@ body{
         padding-left: 20%;
         display: inline-block;
         
-    }*/
-
-    #bg{
-        background-image: url("/assets/annie-spratt-zA7I5BtFbvw-unsplash.jpg");
-        background-repeat: no repeat;
-        background-position: center;
-        background-size: cover;
-        height: 650px;
-        width:100%;
-        padding-top: 100px;
     }
+
+   
+    
 #me{
     
     text-align: center;
@@ -179,3 +175,34 @@ span{
     letter-spacing: 3px;
 
 }
+input[type=text],textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  #submit {
+    
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+  
+  }
+  .ContactUs{
+    background-image: url("/assets/annie-spratt-zA7I5BtFbvw-unsplash.jpg");
+  }
+  #submit:hover {
+   
+    border-radius:10px;
+  }
+  #contact{
+	color:black;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  
