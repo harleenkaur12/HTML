@@ -1,0 +1,112 @@
+<!--Forms are used for collecting data-->
+<!doctype html>
+<html>
+    <head>
+        <title>Students form</title>
+        
+        <style>
+            div{
+                width:700px;
+                background-color: rgb(255, 178, 178);
+                padding: 30px;
+                color: white;
+                margin: auto;
+            }
+        </style>
+
+       <script>
+        function valid(){
+            var uname=document.forms["frm"]["uname"].value;
+            var pass=document.forms["frm"]["pass"].value;
+            if(uname==""){
+                alert("please enter your username")
+                return false;
+            }
+            else if(pass==""){
+                alert("please enter your password")
+                return false;
+            }
+            
+            else{
+                alert("form submit successfully")
+                return true;
+            }
+           
+           
+        }
+    </script>
+        
+    </head>
+    <body>
+        <div>
+        <fieldset>
+            <legend>Login Page</legend>
+        <h2 align="center">Students Form</h2><br>
+        <form method="post" action="" name="frm" onsubmit="return valid()"  >
+            <B><label>Student Name</label><br></B>
+            <input name="uname"  type="text" id="name" placeholder="Your name here">
+            <button>Ok</button><br>
+            <BR>
+
+            <B><label>Password</label><br></B>
+            <input type="password" maxlength="10" name="pass"> <!--required and maxlength attributes-->
+            <button>Ok</button><br>
+            <BR>
+
+            <B ><label>Select Gender </label><br></B>
+            <input type="radio" value="Male" name="gender">Male<br>
+            <input type="radio" value="Female" name="gender">Female
+            <br><BR>
+
+            <B><label>Select Hobbies</label></B>
+            <br>
+            <input type="checkbox" value="Watching TV" name="watching TV" >Watching TV <br>         
+            <input type="checkbox" value="Reading" name="reading" >Reading <br>
+            <input type="checkbox" value="Driving" name="driving" >Driving<br>
+            <br>
+
+            <B><label>Select Date of Birth</label></B><br>
+            <input type="date" name="dob"><br>
+            <br>
+
+            <b><label>Enter Age</label></b><br>
+            <input type="number">
+            <br><br>
+
+            <b><label>Enter Address</label></b><br>
+            <textarea cols="50" rows="15" placeholder="Your address here"></textarea> <!--textarea tag has cols and rows instead of height and width -->
+            <br><br>
+
+            <b><label>Select cities</label></b><br>
+            <select>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Indore">Indore</option>
+                <option value="Chandigarh">Chandigarh</option>
+            </select><br><br>
+
+            <b><label>Select color</label></b>
+            <input type="color">
+            <br><br>
+            <b><label>Select Image</label></b><br>
+            <input type="file">
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+
+            <!--Methods -- get(not secure) and post(secure) -- attribute of form -->
+
+
+
+
+
+
+
+
+
+
+        </form>
+    </fieldset>
+</div>
+    </body>
+</html>
