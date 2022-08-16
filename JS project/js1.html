@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>Document</title>
+    <style>
+        fieldset{
+            border: 3px solid blue;
+            padding-right:10px;
+            margin-right:-35px;
+        }
+        fieldset .row input{
+            margin-bottom:3px;
+        
+        }
+     </style>
+     <script src="form1.js"></script>
+</head>
+
+<body >
+    <div class="container">
+    <h3 class="text-center" style="text-decoration:underline;color:rgb(171,114,244)">Student Registration Form</h3>
+    <div class="row">
+        <div class="col-sm-11" col-sm-offset-5 style="background-color:rgb(171,114,244)">
+            <div class="p-4">
+        <form method="post" action="" name="frm" onsubmit="return valid()">
+        <div class="text-white">
+            <!------------------------------------name---------------------------->
+
+        <label class="col-sm-2">FIRST NAME</label><input type="text" name="fname">(max 30 characters a-z and A-Z)<br><br>
+        <label class="col-sm-2">LAST NAME</label><input type="text" name="lname">(max 30 characters a-z and A-Z)<br><br>
+
+            <!------------------------------------date of birth---------------------------->
+            <label class="col-sm-2">DATE OF BIRTH</label>
+
+                           <!---------------------day---------------------------->
+            <select>
+            <option value=" Select day">Day:</option>
+            <script>
+            for(i=1;i<=31;i++){
+                document.write("<option value='+i+'>"+i+"</option>")
+            }
+            </script>
+            </select>
+                            <!---------------------month---------------------------->
+            <select id="select">
+            <option value="month">Month:</option>
+            </select>
+            <script>
+                 var select = document.getElementById("select"),
+                arr = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+                 
+                 for(var i = 0; i < arr.length; i++)
+                 {
+                     var option = document.createElement("OPTION"),
+                     txt = document.createTextNode(arr[i]);
+                     option.appendChild(txt);
+                     option.setAttribute("value",arr[i]);
+                     select.insertBefore(option,select.lastChild);
+                 }
+                 </script>
+                  <!----------------------------year---------------------------->
+                  <select>
+                    <option value=" Select year">Year:</option>
+                    <script>
+                    for(i=2012;i>=1990;i--){
+                        document.write("<option value='+i+'>"+i+"</option>")
+                    }
+                    </script>
+                    </select>
+
+        <br><br>
+    
+                    <!----------------------------email---------------------------->
+        <label class="col-sm-2">EMAIL ID</label><input type="email" name="email"><br><br>
+        <label class="col-sm-2">MOBILE NUMBER</label><input type="number" name="mobno">(10 digit number)<br><br>
+
+        <label class="col-sm-2">GENDER</label>
+        <input type="radio" value="Male" name="gender">Male
+        <input type="radio" value="Female" name="gender">Female<br><br>
+       
+        <label class="col-sm-2">ADDRESS</label>
+        <textarea cols="40" rows="3" class="col-sm-2" name="address"></textarea><br><br>
+        <label class="col-sm-2">CITY</label><input type="text" name="city">(max 30 characters a-z and A-Z)<br><br>
+       <label class="col-sm-2">PIN CODE</label><input type="number" name="pincode" >(6 digit number)<br><br>
+        <label class="col-sm-2">STATE</label><input type="text" name="state">(max 30 characters a-z and A-Z)<br><br>
+        <label class="col-sm-2">COUNTRY</label><input type="text" name="country"><br><br>
+        <label class="col-sm-2">HOBBIES</label>
+        Drawing<input type="checkbox" value="Drawing" name="draw">
+        Singing<input type="checkbox" value="Singing" name="sing">
+        Dancing<input type="checkbox"  value="Dancing" name="dance">
+        Sketching<input type="checkbox" value="Sketching" name="sketch"><br>
+        <label class="col-sm-2"></label>Others
+        <input type="checkbox" name="others"><input type="text" class="col-sm-2"><br><br>
+        
+
+        
+        <div class="row">
+            <div class="col-sm-2">Qualification</div>
+            <div class="col-sm-10">
+                <fieldset>
+                    <div class="row" >
+                        <div class="col-sm-1">SI.No.</div>
+                        <div class="col-sm-2">Examination</div>
+                        <div class="col-sm-3"><p class="text-center">Board</p></div>
+                        <div class="col-sm-3"><p class="text-center">Percentage</p></div>
+                        <div class="col-sm-3"><p class="text-center">Year of Passing</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1">1</div>
+                        <div class="col-sm-2">Class X</div>
+                        <div class="col-sm-3"><input type="text" name="x-board" id="x-board"></div>
+                        <div class="col-sm-3"><input type="text" name="x-per" id="x-per"></div>
+                        <div class="col-sm-3"><input type="text" name="x-yop" id="x-yop"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1">2</div>
+                        <div class="col-sm-2">Class XII</div>
+                        <div class="col-sm-3"><input type="text" name="xii-board" id="xii-board"></div>
+                        <div class="col-sm-3"><input type="text" name="xii-per" id="xii-per"></div>
+                        <div class="col-sm-3"><input type="text" name="xii-yop" id="xii-yop"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1">3</div>
+                        <div class="col-sm-2">Graduation</div>
+                        <div class="col-sm-3"><input type="text" name="g-board" id="g-board"></div>
+                        <div class="col-sm-3"><input type="text" name="g-per" id="g-per"></div>
+                        <div class="col-sm-3"><input type="text" name="g-yop" id="g-yop"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1">4</div>
+                        <div class="col-sm-2">Masters</div>
+                        <div class="col-sm-3"><input type="text" name="m-board" id="m-board"></div>
+                        <div class="col-sm-3"><input type="text" name="m-per" id="m-per"></div>
+                        <div class="col-sm-3"><input type="text" name="m-yop" id="m-yop"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-2"></div>
+                    
+                        <div class="col-sm-3"><p class="text-center">(10 char max)</p></div>
+                        <div class="col-sm-3"><p class="text-center">(upto 2 decimal)</p></div>
+                        
+                        <div class="col-sm-3"></div>
+                    </div>
+                </fieldset>
+                
+                
+            </div>
+        </div>
+        
+        <div class="row"></div>
+       <label class="col-sm-2">Courses <br>Applied For</label>
+       
+        <input type="radio" name="radio">BCA
+        <input type="radio" name="radio">BCOM
+        <input type="radio" name="radio">BSC
+        <input type="radio" name="radio">BA<br><br>
+    </div>
+        <div class="text-center">
+        <input type="submit">
+        <input type="reset">
+        </div>
+        </div>
+        </form>
+           </div> 
+           
+ </body>
+</html>
