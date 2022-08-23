@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h2 id="items">Hello How are you?</h2>
+    <ul id="list">
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Guava</li>
+        <li>Grapes</li>
+        <li>Kiwi</li>
+    </ul>
+    <button type="button" id="item">Add More Items</button>
+    <button type="button" id="id">Add More Headings</button>
+    <script>
+        $(document).ready(function(){
+            $("#list").css("border", "2px red solid");
+            $("#item").click(function(){
+                $("#list").prepend("<li>More Items</li>");
+            })
+            // $("#item").click(function(){
+            //     $("#list").append("<li>More Items</li>");
+            // })
+            $("#id").click(function(){
+                $("#items").append("<h3>More Items</h3>");
+            })
+        });
+    </script>
+</body>
+</html>
