@@ -8,7 +8,7 @@
     <script src="jquery.js"></script>
 </head>
 <body>
-    <h2 id="items">Hello How are you?</h2>
+    <div id="main"><h2 id="items">Hello How are you?</h2></div>
     <ul id="list">
         <li>Mango</li>
         <li>Orange</li>
@@ -18,6 +18,10 @@
     </ul>
     <button type="button" id="item">Add More Items</button>
     <button type="button" id="id">Add More Headings</button>
+    <button type="button" id="hide">Hide</button>
+    <button type="button" id="show">Show</button> 
+    <button type="button" id="up">Up</button>
+    <button type="button" id="down">Down</button>
     <script>
         $(document).ready(function(){
             $("#list").css("border", "2px red solid");
@@ -30,6 +34,19 @@
             $("#id").click(function(){
                 $("#items").append("<h3>More Items</h3>");
             })
+            $("#hide").click(function(){
+                $("#main").hide(2000);
+            })
+            $("#show").click(function(){
+                $("#main").show(2000);
+            })
+            $("#up").click(function(){
+                $("#main").slideUp(2000);
+            })
+            $("#down").click(function(){
+                $("#main").slideDown(2000);
+            })
+            
         });
     </script>
 </body>
