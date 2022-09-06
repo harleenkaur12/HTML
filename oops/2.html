@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class subject{
+            constructor(a,b,c,d,e){
+                this.a=a;
+                this.b=b;
+                this.c=c;
+                this.d=d;
+                this.e=e;
+            }
+        }
+        class student extends subject{
+            sum(a,b,c,d,e){
+                add=a+b+c+d+e;
+                console.log(parseInt(add));
+            }
+            average(a,b,c,d,e){
+                console.log((a+b+c+d+e)/5);
+            }
+            result(){
+            if(average>=40){
+                console.log("Pass");
+            }
+            else{
+                console.log("Fail");
+            }
+        }
+        }
+        var x=new subject(12,23,34,56,78);
+        x.sum();
+        x.average();
+        x.result();
+    </script>
+</body>
+</html>
